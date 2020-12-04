@@ -1,0 +1,25 @@
+# This function sorts the list 
+# by using Bubble-Sort Algorithm
+
+
+def Bubble_sort(liste):
+    index_length = len(liste)-1
+    is_sorted = False
+
+    while not is_sorted:
+        is_sorted = True                                            # True for few moment at the begining, and then it will terminate the loop
+        for i in range(0, index_length):
+            if liste[i] > liste[i+1]:
+                is_sorted = False
+                liste[i], liste[i+1] = liste[i+1], liste[i]         # swapping without using temporarous variable 
+    return liste
+
+#----------------------------------------------TRY---SECTION----------------------------------------------------------
+
+from random import shuffle                                          # shuffles the list for evoiding write a list random
+
+liste = [1,2,3,4,5,6,7,8,9,10]
+shuffle(liste)
+print(liste)                                                        # shows that list is shuffled
+
+print(Bubble_sort(liste))        

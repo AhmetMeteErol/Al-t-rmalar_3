@@ -1,0 +1,21 @@
+from random import shuffle                              # shuffles the list for evoiding write a list random
+
+liste = [1,2,3,4,5,6,7,8,9,10]
+shuffle(liste)
+print(liste)                                            # shows that list is shuffled
+
+i=0                                                     # Starting index
+
+while sorted(liste) != liste and i < len(liste):        # controls i for terminate looping
+
+    if liste[i] > liste[i+1]:
+        temp = liste[i+1]                               # swapping numbers with temporary variable
+        liste[i+1] = liste[i]
+        liste[i] = temp
+        i = 0                                           # restarts from index 0
+
+    else:                                               # if no needs to swap, keeps going
+        i += 1
+
+print(liste)
+

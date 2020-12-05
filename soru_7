@@ -16,7 +16,7 @@ def Bubble_sort(liste):
 
 #----------------------------------------------TRY---SECTION----------------------------------------------------------
 
-from random import shuffle                                          # shuffles the list for evoiding write a list random
+from random import shuffle                                          # shuffles the list for evoiding write a random list 
 
 liste = [1,2,3,4,5,6,7,8,9,10]
 shuffle(liste)

@@ -1,7 +1,6 @@
 # This function sorts the list 
 # by using Bubble-Sort Algorithm
 
-
 def Bubble_sort(liste):
     index_length = len(liste)-1
     is_sorted = False
